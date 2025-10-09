@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Pablo Jimenez">
+    <meta name="description" content="este es el ejercicio del PH del agua">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EjercicioPHAgua</title>
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    <script src="phAgua.js" defer></script>
+</head>
+<body>
+    <h1>Ejercicio de Repaso PH del agua</h1>
+    <p>Suponiendo que tenemos la función <code>getPH()</code> que se conecta a un servidor externo
+     y a unos sensores que nos indican la calidad del agua de una piscina de un hotel.</p>
+    <p><pre>let phAgua = getPH();</pre></p>
+    <p>Crea un código javascript que indique si el agua tiene un ph neutro (entre 6.5 y 8.5)
+    , ligeramente alcalino (entre 8.5 y 11), muy alcalino (mayor que 11),
+     ligeramente ácido (entre 3.5 y 6.5) o muy ácido (menor que 3.5).</p>
+
+    <h2>Solución</h2>
+    <form>
+        <label>PH del agua
+            <input type="number" id="txtPH">
+        </label>
+        <button type="button" id="btnCalcular">Analizar</button>
+    </form>
+
+    <div class="notice" id="divSolucion"></div>
+</body>
+</html>
