@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    <script src="ejercicio4b-7.js" defer></script>
+</head>
+<body>
+    <h2>Ejercicio 4b-7: Generador de nombres falsos</h2>
+    <p>Crea una web que contenga dos textboxes y dos botones como aparece en la imagen de abajo.
+         Añade también una división resultado y otra división de errores.</p>
+    <p>Cuando se pulse el botón Añadir ocurrirá lo siguiente:
+        <ul>
+            <li>Borrará el contenido de la división de errores.</li>
+            <li>Se comprobará que al menos un textbox está rellenos, si no están rellenos ninguno mostrará un mensaje de error en la división de errores.</li>
+            <li>Si hay un nombre escrito en el textbox de los nombres, lo añadirá a un array de nombres.</li>
+            <li>Si hay un apellido escrito en el textbox de los apellidos, lo añadirá a un array de apellidos.</li>
+        </ul>
+    <p>Cuando se pulse el botón Generar ocurrirá lo siguiente:</p>
+
+        <ul>
+            <li>Si no hay ningún nombre aún en el array de nombres o no hay ningún apellido en el array de apellidos, se mostrará un mensaje de error en la división de errores y no se hará nada más.
+            <li>Si hay al menos un nombre y un apellido en los arrays, se calcularán dos números aleatorios: uno para el nombre (numNombre) y otro para el apellido (numApellido).
+                <ol>
+                <li>El número del nombre (numNombre) estará comprendido entre el 0 y la longitud del array de nombres (por ejemplo, si tenemos 4 nombres en el array, el número aleatorio podrá ser 0, 1, 2 o 3).</li>
+                <li>Del mismo modo, el número del apellido (numApellido) estará comprendido entre 0 y la longitud del array de apellidos.</li>
+                </ol>
+            <li>Se recuperará el nombre que esté en el array de nombres en la posición numNombre y el apellido que estará en el array de apellidos en la posición numApellidos.</li>
+            <li>Finalmente, se generará un nombre al azar uniendo el nombre y el apellido elegido y añadiéndolo a la división resultado.</li>
+
+
+            <label>Nombre:</label>
+            <input type="text" id="nombretxt"></br>
+
+            <label>Apellido:</label>
+            <input type="text" id="apellidotxt"></br>
+
+            <button id="btnAñadir">Añadir</button>
+            <button id="btnGenerar">Generar</button>
+
+            <div id="resultado"></div>
+            <div id="errores"></div>
+</body>
+</html>
