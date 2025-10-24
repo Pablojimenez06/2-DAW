@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EjercicioDePerro</title>
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    <script src="ejercicioDePerro.js" defer></script>
+</head>
+<body>
+    <h1>Ejercicio De Perro</h1>
+   
+        <p>Botón de Añadir: Se creará un objeto de tipo Perro y se añadirá a un array de perros.</p>
+        <p>Botón de Ordenar por inserción: 
+            Se mostrarán todos los perros con sus datos en una lista no ordenada (&lt;ul&gt;) 
+            en el orden en el que se insertaron.</p>
+        <p>Botón de Ordenar por edad: 
+            Se mostrarán todos los perros con sus datos en una lista (&lt;ol&gt;) ordenados por edad.</p>
+        <p>Botón de Ordenar por raza: 
+            Se mostrarán todos los perros con sus datos en una lista (&lt;ul&gt;) ordenados por la raza alfabéticamente.</p>
+        <p>Tendrás que crear un constructor de objetos de tipo Perro que 
+            devuelva un objeto de tipo Perro que incluya también un método llamado mostrarDatos() 
+            que muestre los datos del perro.</p>
+
+        <p>Nota: la función de array toSorted() puede ser necesaria para no perder el orden original.
+            Nota: para comparar dos cadenas se puede usar string1.localeCompare(string2, "es");</p>
+
+
+        <label>Nombre del perro:</label>
+        <input type="text" id="txtNombreDelPerro"></br>
+
+        <label>Edad del perro:</label>
+        <input type="number" min="0"id="txtEdadDelPerro"></br>
+
+        <label>Raza del perro:</label>
+        <input type="text" id="txtRazaDelPerro"></br>
+
+        <button id="añadir">Añadir</button>
+        <button id="ordenarPorInsercion">Ordenar por Inserción</button>
+        <button id="ordenarPorEdad">Ordenar por Edad</button>
+        <button id="ordenarPorRaza">Ordenar Por Raza</button>
+
+        <div id="resultado"></div>
+</body>
+</html>
